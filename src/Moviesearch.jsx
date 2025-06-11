@@ -21,7 +21,7 @@ function Moviesearch({setResults}){
 
       try {
         const selectedType = typeMap[values.type];
-        const url = `http://www.omdbapi.com/?apikey=862e543b&s=${values.searchQuery}${selectedType ? `&type=${selectedType}` : ""}`;
+        const url = `https://www.omdbapi.com/?apikey=862e543b&s=${values.searchQuery}${selectedType ? `&type=${selectedType}` : ""}`;
         const response = await axios.get(url);
        
         setResults(response.data.Search || []);  // Store results
