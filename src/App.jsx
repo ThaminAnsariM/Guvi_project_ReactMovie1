@@ -2,7 +2,7 @@ import { useState } from "react";
 import Nav from "./Nav";
 import Moviesearch from "./Moviesearch";
 import Movies from "./Movies";
-import './styles.css';
+import './App.css';
 
 
 function App() {
